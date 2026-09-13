@@ -1,0 +1,42 @@
+{
+  "name": "grid-web-app",
+  "version": "0.1.0",
+  "description": "Grid web-shaped paper app — level count.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "gridweb": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "start": "node --experimental-strip-types src/cli.ts",
+    "postinstall": "node .scripts/postinstall.cjs",
+    "prepare": "node .scripts/postinstall.cjs",
+    "prestart": "node .scripts/postinstall.cjs",
+    "prebuild": "node .scripts/postinstall.cjs",
+    "pretest": "node .scripts/postinstall.cjs"
+  },
+  "license": "MIT",
+  "author": "Vault Labs",
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "grid",
+    "web",
+    "app",
+    "grid-web-app",
+    "trading-bot",
+    "crypto-trading",
+    "binance",
+    "defi",
+    "algorithmic-trading",
+    "quantitative-finance",
+    "open-source",
+    "typescript",
+    "javascript",
+    "nodejs"
+  ]
+}
